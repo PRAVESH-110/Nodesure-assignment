@@ -1,0 +1,31 @@
+/* Custom styles for responsive design and scrolling issues */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.hero {
+    height: auto; /* Allow height to adjust based on content */
+    overflow: auto; /* Ensure scrolling is enabled */
+}
+
+.ftco-section {
+    padding: 6em 0; /* Adjust padding for better spacing on larger screens */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Changed from 100vh to auto for mobile */
+    }
+    .ftco-section {
+        padding: 4em 0; /* Adjust padding for better spacing on smaller screens */
+    }
+}
+
+/* Additional styles can be added here as needed */
